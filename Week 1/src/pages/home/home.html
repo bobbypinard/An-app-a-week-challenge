@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      10 Ideas
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card>
+    <ion-card-header>
+      Lorem Ipsum
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+        <ion-item *ngFor="let item of ladder1; let i = index;">{{i+1}}. {{item}}</ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        Lorem Ipsum
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-list>
+          <ion-item *ngFor="let item of ladder2; let i = index;">{{i+1}}. {{item}}</ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+
+      <ion-card>
+        <ion-card-header>
+          Lorem Ipsum
+        </ion-card-header>
+
+        <ion-card-content>
+          <ion-list>
+            <ion-item *ngFor="let item of ladder3; let i = index;">{{i+1}}. {{item}}</ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+
+  <ion-fab right bottom>
+    <button ion-fab><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+</ion-content>
